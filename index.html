@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <style>
+body {
+  background-color: #ddd;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main {
+  margin: auto;
+  padding: 32px;
+  background-color: #fff;
+  width: 720px;
+  float: center;
+  border-radius: 25px;
+}
+
+.title {
+  text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+  color: #fff;
+  font-size: 42pt;
+  text-align: center;
+  margin: auto;
+}
+
+.ans {
+  color: #555;
+  padding-left: 30px;
+}
+
+a {
+  color: #1a8fc6;
+}
+
+.subtitle {
+  width: 720px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+    </style>
+
+    <title>Homebrew Launcher - Switch</title>
+  </head>
+
+  <body>
+    <br />
+    <br />
+    <br />
+    <h1 class="title">Homebrew Launcher</h1>
+    <p class="subtitle"><i>... for Switch, version 3.0.0</i></p>
+    <div class="main">
+      <h3 style="margin-top: 0px;">Installation instructions</h3>
+      <ol>
+        <li>Download latest <a href="https://github.com/switchbrew/nx-hbmenu">nx-hbmenu</a>.</li>
+        <li>Put the hbmenu.nro on the root of your sdcard.</li>
+        <li>Insert the sdcard into the device.</li>
+        <li>Set your Switch DNS server to 104.236.106.125.</li>
+        <li>Run the installation payload.</li>
+        <p>If you see 2000-1337 on your screen it means installation succeeded.</p>
+        <li>Restart the device.</li>
+        <li>Run the normal payload.</li>
+      </ol>
+      <hr />
+      <h3>Frequently asked questions</h3>
+      <p><u>I am below version 3.0.0. What do I do?</u></p>
+      <p class="ans">You can upgrade to 3.0.0 using a cartridge of <a href="https://www.amazon.com/s/ref=nb_sb_noss?field-keywords=Pokken+Tournament+DX">Pokken Tournament DX</a>.</p>
+      <p><u>I am above version 3.0.0. What do I do?</u></p>
+      <p class="ans">Currently we have no plans to support 3.0.1 and above. We recommend buying another system purely for homebrew purposes.</p>
+      <p class="ans">When the time comes, we will release <a href="https://github.com/switchbrew/nx-hbl">nx-hbl</a> which is our NRO launcher that can be used with kernelhax'd systems.</p>
+      <p><u>How do I know what version a system comes on?</u></p>
+      <p class="ans">In the retail store, you can inspect the serial number on the box. See <a href="https://gbatemp.net/threads/switch-firmware-by-serial-number.481215/">here</a> to find which serial numbers are likely to be 3.0.0.</p>
+      <p class="ans">This is a little risky. If you buy a refurbished system maybe it will come with a newer firmware version than the serial number would have you believe.</p>
+      <p><u>Can I host the exploit myself?</u></p>
+      <p class="ans">Yes, you can. For advanced users we provide <a href="https://github.com/switchbrew/nx-hbexploit300">nx-hbexploit300</a>.</p>
+      <p class="ans">This allows you to set up your own server hosting the exploit. All you need is to setup a malicious DNS server that redirects all A records to a static HTTP server of your choice.</p>
+      <p><u>I want to make my own games for my Switch. Where do I start?</u></p>
+      <p class="ans">You can develop homebrew using libnx.</p>
+      <p class="ans"><a href="http://switchbrew.org/index.php?title=Setting_up_Development_Environment">Here</a> is a tutorial on how to set up the development environment (works on Windows, Linux and Mac).</p>
+      <p class="ans"><a href="https://github.com/switchbrew/switch-examples">Here</a> are a few example projects that you can compile and run.</p>
+      <p><u>Does this run homebrew built with libtransistor?</u></p>
+      <p class="ans">Not at the moment. We will work with them to work it out.</p>
+      <p><u>Is this a kernel exploit?</u></p>
+      <p class="ans">No.</p>
+      <hr />
+      <h3>Credits</h3>
+      <p>yellows8, plutoo <span style="float: right; font-style: italic;">hbmenu, hbloader and hbexploit</span></p>
+      <p>ReSwitched <span style="float: right; font-style: italic;">webkit exploit and rohan</span></p>
+      <p>devkitPro <span style="float: right; font-style: italic;">toolchain</span></p>
+      <hr />
+      <p>With help from:</p>
+      <p><i>WntrMute, shinyquag, misson20000, fincs, TuxSH, hexkyz, SciresM, naehrwert, thexyz, derrek, kgsws, hthh, Daeken, shufol3, nedwill, smea, ...</i></p>
+      <hr />
+      2018 <a href="http://switchbrew.org">SwitchBrew</a> - #switchdev @ EFNet
+    </div>
+  </body>
+</html>
