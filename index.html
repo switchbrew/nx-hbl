@@ -73,11 +73,19 @@ a {
         <p>If you see 2000-1337 on your screen it means installation succeeded.</p>
         <li>Restart the device, and perform a new connection test.</li>
         <li>Click "Run".</li>
-        <p>If there's a popup asking you to exit the applet the payload succeeded.</p>
+        <p>The exploit is finished when there's a popup asking you to exit.</p>
         <li>Go to the home menu and click the Album icon.</li>
       </ol>
       <hr />
       <i class="ans">Running untrusted homebrew could potentially damage your Switch, and will void your warranty. You are doing this at your own risk!</i>
+      <hr />
+      <h3>Manual server installation</h3>
+      <ol>
+        <li>Clone latest <a href="https://github.com/switchbrew/nx-hbexploit300">nx-hbexploit300</a>.</li>
+        <li>Run "make" in the git repo.</li>
+        <li>Take the contents of build/ folder, and host them on a static HTTP server.</li>
+        <li>Setup a custom DNS server that redirects the A record for <code>ctest.cdn.nintendo.net</code> to your static HTTP server.</li>
+      </ol>
       <hr />
       <h3>Frequently asked questions</h3>
       <p><u>I am below version 3.0.0. What do I do?</u></p>
@@ -98,6 +106,8 @@ a {
       <p class="ans">Also, come visit us on irc: #switchdev @ EFNet. :-)</p>
       <p><u>Does this run homebrew built with libtransistor?</u></p>
       <p class="ans">Not at the moment. We will work with them to work it out.</p>
+      <p><u>I'm getting error 2347-0003?</u></p>
+      <p class="ans">This means the nro file wasn't found. Make sure your sdcard wasn't inserted, and that it has hbmenu.nro on its root.</p>
       <p><u>Is this a kernel exploit?</u></p>
       <p class="ans">No.</p>
       <hr />
@@ -107,7 +117,7 @@ a {
       <p>devkitPro <span style="float: right; font-style: italic;">toolchain</span></p>
       <hr />
       <p>With help from:</p>
-      <p><i>WntrMute, shinyquag, misson20000, fincs, TuxSH, hexkyz, SciresM, mtheall, naehrwert, thexyz, derrek, kgsws, hthh, Daeken, shufol3, nedwill, smea, andoma, ...</i></p>
+      <p><i>WntrMute, shinyquag, misson20000, fincs, TuxSH, hexkyz, SciresM, mtheall, naehrwert, thexyz, derrek, kgsws, hthh, Daeken, shufol3, nedwill, smea, st4rk, andoma, ...</i></p>
       <hr />
       2018 <a href="http://switchbrew.org">SwitchBrew</a> - #switchdev @ EFNet
     </div>
